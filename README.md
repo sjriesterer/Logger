@@ -37,6 +37,10 @@ To Log:
 
 	Logger.log(Int logType, String TAG, String logMessage)
 	
+	/*
+	logType is a value 0 to 3: 0 = verbose log, 1 = debug log, 2 = information log, 3 = error log
+	*/
+	
 To delete Log:
 
 	Logger.deleteLog()
