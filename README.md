@@ -1,9 +1,11 @@
 # Logger
 Logger class for Android Studio
+
 Samuel Riesterer
+
 2019
 
-Class for logging in Android Studio. Creates a directory in local storage. Exports log statements to file in directory.
+Class for logging in Android Studio. Prints log statements. Creates a directory in local storage. Exports log statements to file in directory.
 
 To use:
 
