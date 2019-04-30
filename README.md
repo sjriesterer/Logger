@@ -17,6 +17,12 @@ Declare as a top level variable:
 
 	lateinit var logger: Logger
 	
+In Main Activity, redirect onRequestPermissionResult() method:
+
+	override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<String>, grantResults: IntArray)
+	
+		{logger.onRequestPermissionsResult(requestCode, permissions, grantResults)}
+
 Init variable in Main Activity:
 
 	logger = Logger(MainActivity mainActivity, String sharedPreferenceKey, String appDirectoryName, Boolean exportLogToFile)
