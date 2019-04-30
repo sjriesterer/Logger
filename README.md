@@ -21,7 +21,7 @@ Init variable in Main Activity:
 
 	logger = Logger(MainActivity mainActivity, String sharedPreferenceKey, String appDirectoryName, Boolean exportLogToFile)
 	
-Add to Main Activity onStart():
+Add to Main Activity onStart(): // In the event user deletes directory, this will reattempt folder creation
 
 	logger.attemptFolderCreation()
 	
