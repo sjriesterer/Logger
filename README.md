@@ -19,16 +19,16 @@ Declare as a top level variable:
 
 	lateinit var logger: Logger
 	
+Init variable in Main Activity:
+
+	logger = Logger(MainActivity mainActivity, String sharedPreferenceKey, String appDirectoryName, Boolean exportLogToFile)
+	
 In Main Activity, redirect onRequestPermissionResult() method:
 
 	override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<String>, grantResults: IntArray)
 	
 		{logger.onRequestPermissionsResult(requestCode, permissions, grantResults)}
 
-Init variable in Main Activity:
-
-	logger = Logger(MainActivity mainActivity, String sharedPreferenceKey, String appDirectoryName, Boolean exportLogToFile)
-	
 Add to Main Activity onStart(): // In the event user deletes directory, this will reattempt folder creation
 
 	logger.attemptFolderCreation()
